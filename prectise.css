@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+/* for navigation bar only */
+.navbar {
+  display: flex;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background-color: white;
+}
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+
+  width: 70%;
+}
+.navbar-list li {
+  font-size: 18px;
+  padding: 20px;
+  list-style: none;
+}
+
+.navbar-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-list li a:hover {
+  color: greenyellow;
+  background-color: darkgray;
+}
+
+.logo {
+  display: flex;
+}
+.logo img {
+  width: 40px;
+  border: 3px solid rgb(228, 41, 41);
+  border-radius: 50px;
+}
+
+/* for search navigation bar */
+.navbar-button {
+  width: 30%;
+  text-align: center;
+  justify-content: center;
+  padding: 0px 22px;
+}
+#search {
+  size: 20px;
+  border: 2px solid rgb(235, 48, 23);
+  border-radius: 15%;
+  height: 32px;
+  background-color: white;
+  margin-top: 3px;
+}
+.btn {
+  padding: 3px;
+  margin: 3px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: lightslategray;
+}
+.btn:hover {
+  color: pink;
+}
+/* main section disign */
+
+/* for centrilzed image */
+.w-10 {
+  width: 50%;
+  margin-left: 25%;
+  z-index: -1;
+}
+/*  */
+.main {
+  background-color: lightslategray;
+}
+.good {
+  background-color: rgb(152, 207, 99);
+}
+/* close bootstrap crowser section  */
+.categary {
+  background-color: white;
+  size: 20px;
+}
+.cate-list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+  padding-bottom: 5%;
+}
+.cate-list li a img {
+  border: 2px solid rgb(161, 157, 157);
+  border-radius: 40%;
+  height: 100px;
+}
+.cate-list li {
+  list-style: none;
+}
+.cate-list li a {
+  text-decoration: none;
+}
+.categary h2 {
+  margin: 10px;
+  font-variant: small-caps;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+.cate-h5 {
+  letter-spacing: 5px;
+  margin-right: 5%;
+  text-align: center;
+}
+/* new section grid start here  */
+
+.p1-grid {
+  display: grid;
+  height: 1000px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  gap: 20px;
+  background-color: white;
+  padding-left: 15vh;
+}
+.box img {
+  color: red;
+  width: 220px;
+  height: 200px;
+}
+/*footer section */
+.foot-main {
+  display: flex;
+  border-radius: 10%;
+  height: 500px;
+  width: 100%;
+  margin: 7%;
+  padding: 5%;
+  background-color: lightslategray;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.foot-main section p {
+  color: antiquewhite;
+}
+.foot-main div p {
+  color: antiquewhite;
+}
+.foot-sec {
+  height: 500px;
+  width: 33%;
+}
+.frm {
+  height: 500px;
+  padding-top: 20px;
+  width: 33%;
+  padding-left: 20px;
+}
+.foot-detail {
+  height: 500px;
+  width: 30%;
+  padding-right: 15px;
+}
+.foot-detail h2 {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.lb {
+  font-size: 18px;
+  font-weight: bold;
+}
+.frm input {
+  width: 100%;
+  height: 30px;
+  color: green;
+  border: 1px solid pink;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.frm h5 {
+  font-weight: bold;
+}
+.foot-btn {
+  width: 30%;
+  border: none;
+  margin-left: 40%;
+  border-radius: 20px;
+  background-color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.foot-btn:hover {
+  color: rgb(214, 44, 186);
+  background-color: rgb(104, 238, 175);
+}
+.foot-sec {
+  padding-left: 5px;
+  font-size: 20px;
+}
+.foot-sec h2 {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.share-img {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.share-img img {
+  height: 40px;
+  width: 45px;
+}
+.burger {
+  position: absolute;
+  cursor: pointer;
+  top: 35px;
+  right: 5px;
+  display: none;
+}
+.line {
+  width: 30px;
+  height: 5px;
+  background-color: lightslategray;
+  margin: 3px;
+}
+/* media queries for making page responsive */
+@media only screen and (max-width: 1101px) {
+  .navbar {
+    flex-direction: column;
+    position: relative;
+  }
+  .navbar-list {
+    flex-direction: column;
+  }
+  #search {
+    width: 100%;
+  }
+  .burger {
+    display: block;
+  }
+  .cate-list {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .p1-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 9 * 11%;
+    height: 200vh;
+    text-align: center;
+  }
+  .pro-grid {
+    display: block;
+  }
+  .foot-main {
+    height: 400vh;
+    flex-direction: column;
+    /* height: auto; */
+    margin-top: 350vh;
+  }
+  .frm {
+    margin-top: 40%;
+    margin-right: 10vh;
+  }
+  .foot-btn {
+    width: 15vh;
+  }
+  .categary {
+    background-color: white;
+    size: 20px;
+  }
+}
